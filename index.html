@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TDS Reward Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="eyebrow">TOWER DEFENSE SIMULATOR</p>
+        <h1>TDS Reward Tracker</h1>
+        <p class="subtitle">Live reward totals from the OCR tracker.</p>
+      </div>
+      <div class="live"><span></span> LIVE</div>
+    </header>
+
+    <section class="stats">
+      <article class="card xp">
+        <div class="label">TOTAL XP</div>
+        <div id="xp" class="value">—</div>
+      </article>
+      <article class="card coins">
+        <div class="label">TOTAL COINS</div>
+        <div id="coins" class="value">—</div>
+      </article>
+      <article class="card runs">
+        <div class="label">RUNS</div>
+        <div id="runs" class="value">—</div>
+      </article>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="panel">
+        <div class="panel-title">LAST REWARD</div>
+        <div class="reward-row">
+          <div><strong id="last-xp">—</strong><span> XP</span></div>
+          <div><strong id="last-coins">—</strong><span> Coins</span></div>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="panel-title">LAST UPDATED</div>
+        <div id="updated" class="updated">Waiting for tracker...</div>
+      </article>
+    </section>
+
+    <footer>
+      <span>Data is updated automatically from GitHub.</span>
+      <span id="refresh-status">Checking...</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
